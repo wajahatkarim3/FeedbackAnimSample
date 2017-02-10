@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 25
@@ -27,6 +28,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
 
-    compile 'com.facebook.rebound:rebound:0.3.8'                // http://facebook.github.io/rebound/
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'                    // http://jakewharton.github.io/butterknife/
+
+    compile 'com.github.florent37:viewanimator:1.0.5'           // https://github.com/florent37/ViewAnimator
     compile 'com.intuit.sdp:sdp-android:1.0.4'                  // https://github.com/intuit/sdp
 }
