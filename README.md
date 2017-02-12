@@ -1,6 +1,6 @@
 Feedback Animation Sample
 =========================
-[![](https://img.shields.io/badge/MaterialUp-FeedbackAnim-brightgreen.svg)](https://material.uplabs.com/posts/feedback-animation-sample)
+[![](https://img.shields.io/badge/MaterialUp-FeedbackAnim-brightgreen.svg)](https://material.uplabs.com/posts/feedback-animation-sample) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Feedback%20Animation%20Sample-blue.svg?style=flat)](https://android-arsenal.com/details/3/5271)
 
 This is an implementation of web feedback animation UI inspired from https://site.uplabs.com/posts/web-feedback by [@saptarshipr](https://twitter.com/saptarshipr). I loved the animations and UI, so I decided to create it in android.
 
