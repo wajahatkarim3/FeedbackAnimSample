@@ -4,7 +4,7 @@ Feedback Animation Sample
 
 This is an implementation of web feedback animation UI inspired from https://site.uplabs.com/posts/web-feedback by [@saptarshipr](https://twitter.com/saptarshipr). I loved the animations and UI, so I decided to create it in android.
 
-[![Demo](https://github.com/wajahatkarim3/FeedbackAnimSample/blob/master/Art/demo.gif)]()
+[![Demo](https://github.com/wajahatkarim3/FeedbackAnimSample/blob/master/Art/demo_v1.gif)]()
 
 # Third-party Libraries Used
 * ViewAnimator (https://github.com/florent37/ViewAnimator)
