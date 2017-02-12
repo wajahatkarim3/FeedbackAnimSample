@@ -6,7 +6,7 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://D:/Softwares/Android SDK/adt-bundle-windows-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/25.1.0/animated-vector-drawable-25.1.0-sources.jar!/" />
+      <root url="jar://D:/SDK/adt-bundle-windows-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/25.1.0/animated-vector-drawable-25.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

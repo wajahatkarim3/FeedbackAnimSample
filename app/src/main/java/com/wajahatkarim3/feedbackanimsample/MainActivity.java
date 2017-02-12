@@ -18,6 +18,7 @@ import com.github.florent37.viewanimator.ViewAnimator;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements RatingBar.OnRatingBarChangeListener {
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements RatingBar.OnRatin
     @BindView(R.id.txtComments) EditText txtComments;
     @BindView(R.id.btnSubmit) Button btnSubmit;
     @BindView(R.id.layoutForm) LinearLayout layoutForm;
+    @BindView(R.id.lblThanksFeedback) TextView txtThanks;
 
     boolean isAnimated = false;
 
@@ -104,7 +106,43 @@ public class MainActivity extends AppCompatActivity implements RatingBar.OnRatin
                     })
                     .start();
         }
+    }
 
+    @OnClick(R.id.btnSubmit)
+    public void onSubmitClick()
+    {
+        if (isAnimated)
+        {
+            // Feedback has been written
+            txtThanks.setVisibility(View.VISIBLE);
 
+            // Perfrom Animations
+            ViewAnimator
+                    .animate(ratingBar)
+                    .dp().translationY(-100, -130)
+                    .interpolator(new LinearOutSlowInInterpolator())
+                    .duration(200)
+                    .alpha(1,0)
+            .andAnimate(lblWeHearFeedback)
+                    .dp().translationY(-20, -90)
+                    .interpolator(new LinearOutSlowInInterpolator())
+                    .duration(250)
+                    .alpha(1,0)
+            .andAnimate(txtComments)
+                    .dp().translationY(-30, -120)
+                    .interpolator(new LinearOutSlowInInterpolator())
+                    .duration(300)
+                    .alpha(1,0)
+            .andAnimate(btnSubmit)
+                    .dp().translationY(-35, -200)
+                    .interpolator(new LinearOutSlowInInterpolator())
+                    .duration(340)
+                    .alpha(1,0)
+            .andAnimate(txtThanks)
+                    .dp().translationY(0, -200)
+                    .interpolator(new LinearOutSlowInInterpolator())
+                    .duration(600)
+                    .start();
+        }
     }
 }
